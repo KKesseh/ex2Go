@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <header>
+
+      <nav class="main-header">
+        <label for="" class="logo">Ex2GO</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="user-profile.html">My Profile</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <div class="admin-sign-in">
+      <h4>The admin dashboard is exclusively accessible to users who have been designated as administrators. If you are an administrator, please <a href="">click here</a> to sign in.</h4>
+    </div>
+   
+    <div class="stock-manage-header">
+     <p>Stock Management Dashboard</p>
+    </div>
+
+    <div  class="add-container">
+      <div class="add-title">Add, Edit or Delete a Pharmaceutical or a Surgical Item to your Database</div>
+      <form action="">
+        <div class="product-details">
+          
+  
+          <div class="item-info">
+            <label for="">Product Category</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">ICN Code</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Product Description</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Strength</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Formulation</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Batch Number</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Expiry Date</label>
+            <input type="number">
+          </div>
+  
+          <div class="item-info">
+            <label for="" class="info-name">Quantity</label>
+            <input type="number">
+          </div>
+
+  
+          <div class="item-info">
+            <label for="">Cost Per Item</label>
+            <input type="number">
+          </div>
+        </div>
+
+        <div>
+          <button class="add-item-btn item-btns">Add Item</button>
+          <button class="item-btns">View All Items</button>
+          <button class="clear-items item-btns">Clear All</button>
+        </div>
+      </form>
+
+      <div class="search-box">
+        <h4>Search Box</h4>
+        <input type="text" class="name-icn-code" placeholder="ICN Code">
+        <input type="text"class="drug-name" placeholder="Drug Name"> 
+        <input type="text" placeholder="Select Facility">
+        <div>
+          <button class="filter">Filter</button><button class="item-search">Search</button>
+        </div>
+        <div>
+          <h4>Filter Search Results</h4>
+          <label for="">Product Category</label>
+          <select name="" id="">
+            <option value="allproducts">All Products</option>
+            <option value="allproducts">Pharmaceuticals</option>
+            <option value="allproducts">Surgicals</option>
+            <option value="allproducts">Others</option>
+          </select>
+
+          <label for="">Drug Category</label>
+          <select name="" id="">
+            <option value="allproducts">Antibiotics</option>
+            <option value="allproducts">Tablets</option>
+            <option value="allproducts">Cold Chain & Vaccines</option>
+            <option value="allproducts">ARV</option>
+          </select>
+
+          <label for="">Expiry Date On</label>
+          <input type="date">
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="add-item-title">
+      <p>The followiing items will be added to your database</p>
+    </div>
+
+    <div class="drug-info-table">
+
+      <div ><h4>List of items in your database</h4></div>
+        <table>
+          <tr>
+            <th>ICN Code</th>
+            <th>Description</th>
+            <th>Pack Size</th>
+            <th>Quantity</th>
+            <th>Expiry Date</th>
+            <th>Batch Number</th>
+            <th>Cost</th>
+            <th>Qty to Order</th>
+            <th>Total Cost</th>
+            <th>Edit Item</th>
+            <th>Delete Item</th>
+          </tr>
+
+          <tr>
+            <td>2036</td>
+            <td>Lignocaine 2% Ampoule Injection</td>
+            <td>20's</td>
+            <td>1000</td>
+            <td>31/11/2023</td>
+            <td>AZ321V</td>
+            <td>R1 300</td>
+            <td>50</td>
+            <td>R1 300</td>
+            <td><button class="edit-item">Edit</button></td>
+            <td><button class="delete-item">Delete</button></td>
+            
+          </tr>
+
+
+          <tr>
+            <td>1006</td>
+            <td>Paracetamol 500mg Tablets</td>
+            <td>20's</td>
+            <td>500</td>
+            <td>01/02/2024</td>
+            <td>PP6IJZ</td>
+            <td>R5.99</td>
+            <td>50</td>
+            <td>R1 300</td>
+            <td><button class="edit-item">Edit</button></td>
+            <td><button class="delete-item">Delete</button></td>
+          </tr>
+
+          <tr>
+            <td>2036</td>
+            <td>Lignocaine 2% Ampoule Injection</td>
+            <td>20's</td>
+            <td>1000</td>
+            <td>31/11/2023</td>
+            <td>AZ321V</td>
+            <td>R1 300</td>
+            <td>50</td>
+            <td>R1 300</td>
+            <td><button class="edit-item">Edit</button></td>
+            <td><button class="delete-item">Delete</button></td>
+          </tr>
+
+          <tr>
+            <td>1006</td>
+            <td>Paracetamol 500mg Tablets</td>
+            <td>20's</td>
+            <td>500</td>
+            <td>01/02/2024</td>
+            <td>PP6IJZ</td>
+            <td>R5.99</td>
+            <td>50</td>
+            <td>R1 300</td>
+            <td><button class="edit-item">Edit</button></td>
+            <td><button class="delete-item">Delete</button></td>
+          </tr>
+        </table>
+    </div>
+
+    <footer class="main-footer">
+      <div class="footer-container">
+        <h3>Ex2Go</h3>
+        <p>Medicine the go</p>
+       
+      </div>
+      <div class="copyright">
+        <p>&copf; 2023 Ex2Go. Designed by <span>Kwabena Kesseh</span></p>
+      </div>
+    </footer>  
+</body>
+</html>

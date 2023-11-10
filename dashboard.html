@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+    <header>
+
+      <nav class="main-header">
+        <label for="" class="logo">Ex2GO</label>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+          <li><a href="admin.html">Admin</a></li>
+          <li><a href="user-profile.html">My Profile</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+        </ul>
+      </nav>
+      
+    </header>
+
+    <div class="welcome">
+      <p>Welcome to Ex2Go, a user-friendly web application that grants you access to medications that are nearing their expiration dates at different hospitals, clinics, and other healthcare facilities. </p>
+      <p>Enter the name of the facility you're interested in, and you'll be directed to their dashboard to view their soon-to-expire stock.</p>
+    </div>
+
+    <div class="facility-search">
+      <input type="text" name="" id="" placeholder="Name of Facility/Hospital/CHC/PHC">
+      <button class="item-btns">Search</button>
+    </div>
+    <div class="facility-header">
+      <h2>CURRENT FACILITY: TAUNG DISTRICT HOSPITAL PHARMACY</h2>
+    </div>
+
+    <div class="facility-container">
+      <div class="pharmacy-info">
+        <p><span class="fac-info">Facility:</span> Taung District Hospital Pharmacy</p>
+        <p><span class="fac-info">Responsible Pharmacist:</span> Dennis Owino</p>
+        <p><span class="fac-info">Procurement Pharmacist:</span> Kwabena Kesseh</p>
+        <p><span class="fac-info">Y Number:</span> 1866</p>
+        <p><span class="fac-info">Location:</span> Taung</p>
+        <p><span class="fac-info">Tel:</span>011 254 8184</p>
+        <p><span class="fac-info">Email:</span> dowinp@nwpg.gov.za</p>
+        <p><span class="fac-info">District:</span> Dr. Ruth Semogotsi Mompati</p>
+      </div>
+
+      <div class="search-box">
+        <h4>Search Box</h4>
+        <input type="text" class="name-icn-code" placeholder="ICN Code">
+        <input type="text"class="drug-name" placeholder="Drug Name"> 
+        <input type="text" placeholder="Select Facility">
+        <div>
+          <button class="filter">Filter</button><button class="item-search">Search</button>
+        </div>
+        <div>
+          <h4>Filter Search Results</h4>
+          <label for="">Product Category</label>
+          <select name="" id="">
+            <option value="allproducts">All Products</option>
+            <option value="allproducts">Pharmaceuticals</option>
+            <option value="allproducts">Surgicals</option>
+            <option value="allproducts">Others</option>
+          </select>
+
+          <label for="">Drug Category</label>
+          <select name="" id="">
+            <option value="allproducts">Antibiotics</option>
+            <option value="allproducts">Tablets</option>
+            <option value="allproducts">Cold Chain & Vaccines</option>
+            <option value="allproducts">ARV</option>
+          </select>
+
+          <label for="">Expiry Date On</label>
+          <input type="date">
+        </div>
+      </div>
+    </div>
+
+   
+
+    
+    <div class="drug-info-table">
+      <div ><h4>List of soon to expire medication and surgical items</h4></div>
+      <table>
+        <tr>
+          <th>ICN Code</th>
+          <th>Description</th>
+          <th>Pack Size</th>
+          <th>Quantity</th>
+          <th>Expiry Date</th>
+          <th>Batch Number</th>
+          <th>Cost</th>
+          <th>Qty to Order</th>
+          <th>Total Cost</th>
+          <th>Select Item</th>
+        </tr>
+
+        <tr>
+          <td>2036</td>
+          <td>Lignocaine 2% Ampoule Injection</td>
+          <td>20's</td>
+          <td>1000</td>
+          <td>31/11/2023</td>
+          <td>AZ321V</td>
+          <td>R1 300</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+          
+        </tr>
+
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>2036</td>
+          <td>Lignocaine 2% Ampoule Injection</td>
+          <td>20's</td>
+          <td>1000</td>
+          <td>31/11/2023</td>
+          <td>AZ321V</td>
+          <td>R1 300</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>2036</td>
+          <td>Lignocaine 2% Ampoule Injection</td>
+          <td>20's</td>
+          <td>1000</td>
+          <td>31/11/2023</td>
+          <td>AZ321V</td>
+          <td>R1 300</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>2036</td>
+          <td>Lignocaine 2% Ampoule Injection</td>
+          <td>20's</td>
+          <td>1000</td>
+          <td>31/11/2023</td>
+          <td>AZ321V</td>
+          <td>R1 300</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+
+        <tr>
+          <td>1006</td>
+          <td>Paracetamol 500mg Tablets</td>
+          <td>20's</td>
+          <td>500</td>
+          <td>01/02/2024</td>
+          <td>PP6IJZ</td>
+          <td>R5.99</td>
+          <td>50</td>
+          <td>R1 300</td>
+          <td><input type="checkbox" id="item1" name="item" value="item"></td>
+        </tr>
+      </table>
+
+      <button class="request-order-btn">Request Order</button>
+    </div>
+
+    <footer class="main-footer">
+
+      <div class="footer-container">
+        <h3>Ex2Go</h3>
+        <p>Medicine the go</p>
+       
+      </div>
+      <div class="copyright">
+        <p>&copf; 2023 Ex2Go. Designed by <span>Kwabena Kesseh</span></p>
+      </div>
+  
+    </footer>
+</body>
+</html>
